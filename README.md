@@ -6,5 +6,5 @@ PostgreSQL Log Analyser Docker Image
 ### Usage:
 
 ```
-docker build -t grandegoiania/pgbadger:latest -t grandegoiania/pgbadger:11.3 .
+docker build -t grandegoiania/pgbadger:latest -t grandegoiania/pgbadger:11.8 .
 ```
