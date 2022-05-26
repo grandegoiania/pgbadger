@@ -12,7 +12,8 @@ echo "--top $TOP"
 
 mkdir -p /usr/share/nginx/html/pgbadger
 
-pgbadger --incremental --quiet --jobs $JOBS --Jobs $PARALLEL_FILES --average $AVERAGE --sample $SAMPLE --top $TOP /data/*.log --outdir /usr/share/nginx/html/pgbadger
+pgbadger --incremental --quiet --jobs $JOBS --Jobs $PARALLEL_FILES --average $AVERAGE --sample $SAMPLE --top $TOP --format stderr /data/*.log --outdir /usr/share/nginx/html/pgbadger
 
+echo ""
 echo "... end of run"
 exit 0
